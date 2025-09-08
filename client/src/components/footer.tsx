@@ -34,13 +34,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#ods" className="text-secondary-foreground/80 hover:text-accent transition-colors" data-testid="footer-link-ods">
-                  ODS
+                <a href="#grupos" className="text-secondary-foreground/80 hover:text-accent transition-colors" data-testid="footer-link-grupos">
+                  Grupos
                 </a>
               </li>
               <li>
-                <a href="#eventos" className="text-secondary-foreground/80 hover:text-accent transition-colors" data-testid="footer-link-eventos">
-                  Eventos
+                <a href="#cadastro" className="text-secondary-foreground/80 hover:text-accent transition-colors" data-testid="footer-link-cadastro">
+                  Cadastro
                 </a>
               </li>
             </ul>
@@ -65,30 +65,10 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Redes Sociais</h4>
-            <div className="flex space-x-3">
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-accent rounded flex items-center justify-center hover:bg-accent/80 transition-colors"
-                data-testid="footer-social-linkedin"
-              >
-                <span className="text-accent-foreground text-sm">in</span>
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-accent rounded flex items-center justify-center hover:bg-accent/80 transition-colors"
-                data-testid="footer-social-instagram"
-              >
-                <span className="text-accent-foreground text-sm">ig</span>
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-accent rounded flex items-center justify-center hover:bg-accent/80 transition-colors"
-                data-testid="footer-social-youtube"
-              >
-                <span className="text-accent-foreground text-sm">yt</span>
-              </a>
-            </div>
+            <h4 className="font-semibold mb-4">Sobre o Projeto</h4>
+            <p className="text-secondary-foreground/80 text-sm">
+              ConectaTech é uma iniciativa da Fatec Zona Leste para conectar o mercado empreendedor com estudantes de tecnologia, criando oportunidades reais de aprendizado e desenvolvimento.
+            </p>
           </div>
         </div>
         

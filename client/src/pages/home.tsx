@@ -1,10 +1,9 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import ProjectsSection from "@/components/projects-section";
+import GroupsSection from "@/components/groups-section";
+import JoinPlatform from "@/components/join-platform";
 import RegistrationForms from "@/components/registration-forms";
-import SDGSection from "@/components/sdg-section";
-import ShowcaseSection from "@/components/showcase-section";
-import EventsSection from "@/components/events-section";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -57,10 +56,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <GroupsSection />
+      <JoinPlatform />
       <RegistrationForms />
-      <SDGSection />
-      <ShowcaseSection />
-      <EventsSection />
       <Footer />
     </div>
   );

@@ -43,29 +43,33 @@ export default function Header() {
               Como Funciona
             </button>
             <button 
-              onClick={() => scrollToSection('ods')}
+              onClick={() => scrollToSection('grupos')}
               className="text-foreground hover:text-primary transition-colors"
-              data-testid="nav-ods"
+              data-testid="nav-grupos"
             >
-              ODS
+              Grupos
             </button>
             <button 
-              onClick={() => scrollToSection('eventos')}
+              onClick={() => scrollToSection('cadastro')}
               className="text-foreground hover:text-primary transition-colors"
-              data-testid="nav-eventos"
+              data-testid="nav-cadastro"
             >
-              Eventos
+              Cadastro
             </button>
           </nav>
           
           <div className="hidden md:flex items-center space-x-3">
             <Button 
               variant="outline" 
+              onClick={() => window.location.href = '/auth'}
               data-testid="button-login"
             >
               Login
             </Button>
-            <Button data-testid="button-cadastrar">
+            <Button 
+              onClick={() => window.location.href = '/auth'}
+              data-testid="button-cadastrar"
+            >
               Cadastrar
             </Button>
           </div>
@@ -101,24 +105,31 @@ export default function Header() {
                 Como Funciona
               </button>
               <button 
-                onClick={() => scrollToSection('ods')}
+                onClick={() => scrollToSection('grupos')}
                 className="text-left text-foreground hover:text-primary transition-colors"
-                data-testid="nav-mobile-ods"
+                data-testid="nav-mobile-grupos"
               >
-                ODS
+                Grupos
               </button>
               <button 
-                onClick={() => scrollToSection('eventos')}
+                onClick={() => scrollToSection('cadastro')}
                 className="text-left text-foreground hover:text-primary transition-colors"
-                data-testid="nav-mobile-eventos"
+                data-testid="nav-mobile-cadastro"
               >
-                Eventos
+                Cadastro
               </button>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" data-testid="button-mobile-login">
+                <Button 
+                  variant="outline" 
+                  onClick={() => window.location.href = '/auth'}
+                  data-testid="button-mobile-login"
+                >
                   Login
                 </Button>
-                <Button data-testid="button-mobile-cadastrar">
+                <Button 
+                  onClick={() => window.location.href = '/auth'}
+                  data-testid="button-mobile-cadastrar"
+                >
                   Cadastrar
                 </Button>
               </div>
